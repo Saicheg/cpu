@@ -2,32 +2,47 @@ CPU
 
 ===
 
-# Description
+# Описание
 
-## Common description:
+## Общее:
 
-* Variant: 21
-* Jump command: JMS
-* Architecture: Harvard
-* Address length: 8
-* Data length: 16
-* RAM type: synchronous
-* ROM type: synchronous
-* Addressing: indirect
-* Registers number: 16
+* Вариант: 21
+* Команда условного перехода: JMS
+* Архитектура: Гарвардская
+* ША: 8
+* ШД: 16
+* RAM тип: синхронный
+* ROM тип: синхронный
+* Тип адресация: косвенная
+* Количество РОН: 16
 
-## Cache:
-* Work flgotithm:  most last usage
-* Memory algorythm: synchronous with mapping
-* K:
+## КЭШ:
+* Алгоритм: наиболее давнего хранения
+* Синхронизация с памятью: сквозная с отображением
+* K:4
 
-## ALU:
+## АЛУ:
+* Комманды:
+** SUB
+** NAND
+** NOR
+** ROL
+** ROR
 
-## Arbiter
+## Арбитр
+* Тип: Децентрализованный
 
-## Stack:
+## Стек:
+* Объем: 6
+* Направление: вверх
 
-## DMA:
+## Схема предсказания переходов
+* Тип: A3
+* Бит, тип шаблона: 4, PC(2) || GHR(2)
+
+## КПДП:
+* Начальный адрес: 24
+* Объем: 10
 
 
 
