@@ -1,0 +1,107 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 222 10/21/2009 SJ Web Edition
+# Date created = 12:48:28  June 03, 2012
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Lab04_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Stratix III"
+set_global_assignment -name DEVICE AUTO
+set_global_assignment -name TOP_LEVEL_ENTITY cpu
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:48:28  JUNE 03, 2012"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name LL_ROOT_REGION ON -entity Lab04 -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity Lab04 -section_id "Root Region"
+set_global_assignment -name BDF_FILE register8.bdf
+set_global_assignment -name FMAX_REQUIREMENT "50 MHz" -section_id CLK
+set_global_assignment -name USE_TIMEQUEST_TIMING_ANALYZER OFF
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name QIP_FILE lpm_bustri_8.qip
+set_global_assignment -name QIP_FILE lpm_latch_8.qip
+set_global_assignment -name BDF_FILE register8_block16.bdf
+set_global_assignment -name BDF_FILE register8_bidir.bdf
+set_global_assignment -name QIP_FILE lpm_mux_8_16.qip
+set_global_assignment -name QIP_FILE lpm_decode_4_16.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE register8_block16_spec.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE register8_spec.vwf
+set_global_assignment -name QIP_FILE lpm_dff_8.qip
+set_global_assignment -name HEX_FILE memory_rom_data.hex
+set_global_assignment -name QIP_FILE lpm_rom_8_256.qip
+set_global_assignment -name BDF_FILE memory_rom.bdf
+set_global_assignment -name HEX_FILE memory_ram_data.hex
+set_global_assignment -name QIP_FILE lpm_ram_dq_8_256.qip
+set_global_assignment -name BDF_FILE memory_ram.bdf
+set_global_assignment -name BDF_FILE memory_block.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE memory_block_spec.vwf
+set_global_assignment -name BDF_FILE control_block.bdf
+set_global_assignment -name BDF_FILE flags.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE flags_spec.vwf
+set_global_assignment -name QIP_FILE lpm_counter_2.qip
+set_global_assignment -name QIP_FILE lpm_decode_2.qip
+set_global_assignment -name QIP_FILE lpm_counter_5.qip
+set_global_assignment -name QIP_FILE lpm_decode_5_32.qip
+set_global_assignment -name BDF_FILE stairway.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE stairway_spec.vwf
+set_global_assignment -name BDF_FILE macro_mov.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE macro_mov_spec.vwf
+set_global_assignment -name BDF_FILE macro_next.bdf
+set_global_assignment -name BDF_FILE macro_template.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE macro_next_spec.vwf
+set_global_assignment -name BDF_FILE macro_load.bdf
+set_global_assignment -name QIP_FILE lpm_decode_3.qip
+set_global_assignment -name QIP_FILE lpm_bustri_8_uni.qip
+set_global_assignment -name QIP_FILE lpm_bustri_64_uni.qip
+set_global_assignment -name QIP_FILE lpm_add_sub0.qip
+set_global_assignment -name QIP_FILE lpm_or_8_2.qip
+set_global_assignment -name BDF_FILE cpu.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE cpu_spec.vwf
+set_global_assignment -name BDF_FILE stairway_noclk.bdf
+set_global_assignment -name QIP_FILE lpm_constant_1_0.qip
+set_global_assignment -name QIP_FILE lpm_constant_1_1.qip
+set_global_assignment -name BDF_FILE macro_js.bdf
+set_global_assignment -name BDF_FILE alu_block.bdf
+set_global_assignment -name BDF_FILE oper_sla.bdf
+set_global_assignment -name BDF_FILE oper_or.bdf
+set_global_assignment -name BDF_FILE oper_sub.bdf
+set_global_assignment -name BDF_FILE macro_sla.bdf
+set_global_assignment -name BDF_FILE macro_or.bdf
+set_global_assignment -name BDF_FILE macro_sub.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE cpu_spec.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
