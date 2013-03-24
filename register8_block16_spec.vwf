@@ -5,7 +5,7 @@ the Block Editor! File corruption is VERY likely to occur.
 */
 
 /*
-Copyright (C) 1991-2009 Altera Corporation
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -216,10 +216,8 @@ TRANSITION_LIST("ADDR[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 70.0;
 		LEVEL 0 FOR 850.0;
 	}
 }
@@ -230,10 +228,8 @@ TRANSITION_LIST("ADDR[1]")
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 1 FOR 70.0;
 		LEVEL 0 FOR 850.0;
 	}
 }
@@ -254,8 +250,8 @@ TRANSITION_LIST("DATA[7]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 20.0;
-		LEVEL Z FOR 70.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL Z FOR 60.0;
+		LEVEL 0 FOR 30.0;
 		LEVEL Z FOR 890.0;
 	}
 }
@@ -266,8 +262,8 @@ TRANSITION_LIST("DATA[6]")
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 20.0;
-		LEVEL Z FOR 70.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL Z FOR 60.0;
+		LEVEL 1 FOR 30.0;
 		LEVEL Z FOR 890.0;
 	}
 }
@@ -278,8 +274,8 @@ TRANSITION_LIST("DATA[5]")
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 20.0;
-		LEVEL Z FOR 70.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL Z FOR 60.0;
+		LEVEL 1 FOR 30.0;
 		LEVEL Z FOR 890.0;
 	}
 }
@@ -290,8 +286,8 @@ TRANSITION_LIST("DATA[4]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 20.0;
-		LEVEL Z FOR 70.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL Z FOR 60.0;
+		LEVEL 1 FOR 30.0;
 		LEVEL Z FOR 890.0;
 	}
 }
@@ -302,8 +298,8 @@ TRANSITION_LIST("DATA[3]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 20.0;
-		LEVEL Z FOR 70.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL Z FOR 60.0;
+		LEVEL 0 FOR 30.0;
 		LEVEL Z FOR 890.0;
 	}
 }
@@ -314,8 +310,8 @@ TRANSITION_LIST("DATA[2]")
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 20.0;
-		LEVEL Z FOR 70.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL Z FOR 60.0;
+		LEVEL 1 FOR 30.0;
 		LEVEL Z FOR 890.0;
 	}
 }
@@ -326,8 +322,8 @@ TRANSITION_LIST("DATA[1]")
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 20.0;
-		LEVEL Z FOR 70.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL Z FOR 60.0;
+		LEVEL 1 FOR 30.0;
 		LEVEL Z FOR 890.0;
 	}
 }
@@ -338,8 +334,8 @@ TRANSITION_LIST("DATA[0]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 20.0;
-		LEVEL Z FOR 70.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL Z FOR 60.0;
+		LEVEL 1 FOR 30.0;
 		LEVEL Z FOR 890.0;
 	}
 }
@@ -352,7 +348,9 @@ TRANSITION_LIST("ENABLE")
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 70.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 850.0;
 	}
@@ -364,8 +362,8 @@ TRANSITION_LIST("READ/WRITE")
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 30.0;
 		LEVEL 0 FOR 890.0;
 	}
 }
