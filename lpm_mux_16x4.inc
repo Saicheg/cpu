@@ -13,12 +13,15 @@
 --applicable agreement for further details.
 
 
-FUNCTION lpm_dff_8 
+FUNCTION lpm_mux_16x4 
 (
-	clock,
-	data[7..0]
+	data0x[15..0],
+	data1x[15..0],
+	data2x[15..0],
+	data3x[15..0],
+	sel[1..0]
 )
 
 RETURNS (
-	q[7..0]
+	result[15..0]
 );

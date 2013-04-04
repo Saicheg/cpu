@@ -13,10 +13,12 @@
 --applicable agreement for further details.
 
 
-FUNCTION lpm_dff_8 
+FUNCTION lpm_ram_dq_8x128 
 (
+	address[6..0],
 	clock,
-	data[7..0]
+	data[7..0],
+	wren
 )
 
 RETURNS (

@@ -4,7 +4,7 @@
 -- MODULE: lpm_ff 
 
 -- ============================================================
--- File Name: lpm_dff_8.tdf
+-- File Name: lpm_ff0.tdf
 -- Megafunction Name(s):
 -- 			lpm_ff
 --
@@ -36,11 +36,11 @@ INCLUDE "lpm_ff.inc";
 
 
 
-SUBDESIGN lpm_dff_8
+SUBDESIGN lpm_ff0
 (
 	clock	 : INPUT;
-	data[7..0]	 : INPUT;
-	q[7..0]	 : OUTPUT;
+	data	 : INPUT;
+	q	 : OUTPUT;
 )
 
 VARIABLE
@@ -48,14 +48,14 @@ VARIABLE
 	lpm_ff_component : lpm_ff WITH (
 			LPM_FFTYPE = "DFF",
 			LPM_TYPE = "LPM_FF",
-			LPM_WIDTH = 8
+			LPM_WIDTH = 1
 			);
 
 BEGIN
 
-	q[7..0] = lpm_ff_component.q[7..0];
+	q = lpm_ff_component.q[0..0];
 	lpm_ff_component.clock = clock;
-	lpm_ff_component.data[7..0] = data[7..0];
+	lpm_ff_component.data[0..0] = data;
 END;
 
 
@@ -74,22 +74,23 @@ END;
 -- Retrieval info: PRIVATE: SLOAD NUMERIC "0"
 -- Retrieval info: PRIVATE: SSET NUMERIC "0"
 -- Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
--- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
+-- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "1"
 -- Retrieval info: PRIVATE: UseTFFdataPort NUMERIC "0"
--- Retrieval info: PRIVATE: nBit NUMERIC "8"
+-- Retrieval info: PRIVATE: nBit NUMERIC "1"
 -- Retrieval info: CONSTANT: LPM_FFTYPE STRING "DFF"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_FF"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "8"
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "1"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
--- Retrieval info: USED_PORT: data 0 0 8 0 INPUT NODEFVAL data[7..0]
--- Retrieval info: USED_PORT: q 0 0 8 0 OUTPUT NODEFVAL q[7..0]
+-- Retrieval info: USED_PORT: data 0 0 0 0 INPUT NODEFVAL data
+-- Retrieval info: USED_PORT: q 0 0 0 0 OUTPUT NODEFVAL q
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
--- Retrieval info: CONNECT: q 0 0 8 0 @q 0 0 8 0
--- Retrieval info: CONNECT: @data 0 0 8 0 data 0 0 8 0
+-- Retrieval info: CONNECT: q 0 0 0 0 @q 0 0 1 0
+-- Retrieval info: CONNECT: @data 0 0 1 0 data 0 0 0 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff_8.tdf TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff_8.inc TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff_8.cmp FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff_8.bsf TRUE FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff_8_inst.tdf FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_ff0.tdf TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_ff0.inc TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_ff0.cmp FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_ff0.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_ff0_inst.tdf FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_ff0_syn.v TRUE
 -- Retrieval info: LIB_FILE: lpm

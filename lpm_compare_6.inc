@@ -13,12 +13,12 @@
 --applicable agreement for further details.
 
 
-FUNCTION lpm_dff_8 
+FUNCTION lpm_compare_6 
 (
-	clock,
-	data[7..0]
+	dataa[5..0],
+	datab[5..0]
 )
 
 RETURNS (
-	q[7..0]
+	AeB
 );

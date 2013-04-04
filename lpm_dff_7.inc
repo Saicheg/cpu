@@ -13,12 +13,12 @@
 --applicable agreement for further details.
 
 
-FUNCTION lpm_dff_8 
+FUNCTION lpm_dff_7 
 (
 	clock,
-	data[7..0]
+	data[6..0]
 )
 
 RETURNS (
-	q[7..0]
+	q[6..0]
 );
