@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Stratix III"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY "device-cache-test"
+set_global_assignment -name TOP_LEVEL_ENTITY cpu
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:48:28  JUNE 03, 2012"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
@@ -51,14 +51,8 @@ set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name VECTOR_COMPARE_TRIGGER_MODE INPUT_EDGE
 
 set_global_assignment -name MISC_FILE "Z:/home/sai/Projects/cpu/Lab04.dpf"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "cache/device-cache-test-read.vwf"
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name QIP_FILE lpm_compare_6.qip
 set_global_assignment -name QIP_FILE lpm_counter_4.qip
+set_global_assignment -name QIP_FILE lpm_compare_6.qip
 set_global_assignment -name QIP_FILE lpm_dff_6.qip
 set_global_assignment -name QIP_FILE lpm_dff_7.qip
 set_global_assignment -name QIP_FILE lpm_ff0.qip
@@ -68,6 +62,7 @@ set_global_assignment -name QIP_FILE lpm_mux_7x2.qip
 set_global_assignment -name QIP_FILE lpm_mux_8x2.qip
 set_global_assignment -name QIP_FILE lpm_or_7.qip
 set_global_assignment -name QIP_FILE lpm_ram_dq_8x128.qip
+set_global_assignment -name BDF_FILE cache/encoder2to4.bdf
 set_global_assignment -name BDF_FILE cache/decoder4to2.bdf
 set_global_assignment -name BDF_FILE cache/delay.bdf
 set_global_assignment -name BDF_FILE "cache/device-byte-pusher.bdf"
@@ -160,3 +155,10 @@ set_global_assignment -name BDF_FILE stack.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE stack.vwf
 set_global_assignment -name QIP_FILE lpm_counter0.qip
 set_global_assignment -name QIP_FILE lpm_constant1.qip
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "cache/device-cache-test-read.vwf"
+set_global_assignment -name BDF_FILE parts.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
