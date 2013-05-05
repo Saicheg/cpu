@@ -1265,12 +1265,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "s[63..0]" (rect 1698 784 1735 796)(font "Arial" ))
-	(pt 1528 800)
-	(pt 1744 800)
-	(bus)
-)
-(connector
 	(text "s[2]" (rect 744 774 756 792)(font "Arial" )(vertical))
 	(pt 760 688)
 	(pt 760 800)
@@ -1715,6 +1709,12 @@ applicable agreement for further details.
 (connector
 	(pt 1448 800)
 	(pt 1528 800)
+	(bus)
+)
+(connector
+	(text "s[63..0]" (rect 1698 784 1735 796)(font "Arial" ))
+	(pt 1528 800)
+	(pt 1744 800)
 	(bus)
 )
 (junction (pt 560 56))

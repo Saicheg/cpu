@@ -51,6 +51,16 @@ set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name VECTOR_COMPARE_TRIGGER_MODE INPUT_EDGE
 
 set_global_assignment -name MISC_FILE "Z:/home/sai/Projects/cpu/Lab04.dpf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE cpu_dev.vwf
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS OFF
+set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS OFF
+set_global_assignment -name HDL_MESSAGE_LEVEL LEVEL3
+set_global_assignment -name STRATIXII_OPTIMIZATION_TECHNIQUE AREA
+set_global_assignment -name ALLOW_POWER_UP_DONT_CARE OFF
 set_global_assignment -name QIP_FILE lpm_counter_4.qip
 set_global_assignment -name QIP_FILE lpm_compare_6.qip
 set_global_assignment -name QIP_FILE lpm_dff_6.qip
@@ -127,6 +137,7 @@ set_global_assignment -name QIP_FILE lpm_constant_1_0.qip
 set_global_assignment -name QIP_FILE lpm_add_sub0.qip
 set_global_assignment -name QIP_FILE lpm_bustri_16_uni.qip
 set_global_assignment -name BDF_FILE cpu.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE cpu_dev.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE cpu_spec.vwf
 set_global_assignment -name BDF_FILE stairway_noclk.bdf
 set_global_assignment -name QIP_FILE lpm_constant_1_1.qip
@@ -140,6 +151,7 @@ set_global_assignment -name QIP_FILE lpm_mux_16_16.qip
 set_global_assignment -name QIP_FILE lpm_or_16_2.qip
 set_global_assignment -name QIP_FILE lpm_inv_16.qip
 set_global_assignment -name QIP_FILE lpm_and0.qip
+set_global_assignment -name BDF_FILE cpu_bak.bdf
 set_global_assignment -name BDF_FILE alu_block.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE alu_block.vwf
 set_global_assignment -name BDF_FILE oper_sub.bdf
@@ -155,10 +167,5 @@ set_global_assignment -name BDF_FILE stack.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE stack.vwf
 set_global_assignment -name QIP_FILE lpm_counter0.qip
 set_global_assignment -name QIP_FILE lpm_constant1.qip
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "cache/device-cache-test-read.vwf"
 set_global_assignment -name BDF_FILE parts.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
