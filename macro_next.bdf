@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2009 Altera Corporation
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -344,26 +344,6 @@ applicable agreement for further details.
 	(flipy)
 )
 (symbol
-	(rect 472 752 584 800)
-	(text "lpm_constant_1_0" (rect -16 1 109 17)(font "Arial" (font_size 10)))
-	(text "inst12" (rect 75 32 104 44)(font "Arial" ))
-	(port
-		(pt 0 24)
-		(output)
-		(text "result[0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
-		(text "result[0]" (rect -43 -13 3 1)(font "Arial" (font_size 8))(invisible))
-		(line (pt 0 24)(pt 16 24)(line_width 1))
-	)
-	(drawing
-		(text "0" (rect 16 18 21 30)(font "Arial" ))
-		(line (pt 96 16)(pt 16 16)(line_width 1))
-		(line (pt 16 16)(pt 16 32)(line_width 1))
-		(line (pt 16 32)(pt 96 32)(line_width 1))
-		(line (pt 96 32)(pt 96 16)(line_width 1))
-	)
-	(flipy)
-)
-(symbol
 	(rect 440 656 552 704)
 	(text "lpm_constant_1_0" (rect -16 1 109 17)(font "Arial" (font_size 10)))
 	(text "inst13" (rect 75 32 104 44)(font "Arial" ))
@@ -483,6 +463,26 @@ applicable agreement for further details.
 	)
 	(flipy)
 )
+(symbol
+	(rect 472 752 584 800)
+	(text "lpm_constant_1_1" (rect -16 1 109 17)(font "Arial" (font_size 10)))
+	(text "inst12" (rect 75 32 104 44)(font "Arial" ))
+	(port
+		(pt 0 24)
+		(output)
+		(text "result[0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "result[0]" (rect -43 -13 3 1)(font "Arial" (font_size 8))(invisible))
+		(line (pt 0 24)(pt 16 24)(line_width 1))
+	)
+	(drawing
+		(text "1" (rect 16 18 21 30)(font "Arial" ))
+		(line (pt 96 16)(pt 16 16)(line_width 1))
+		(line (pt 16 16)(pt 16 32)(line_width 1))
+		(line (pt 16 32)(pt 96 32)(line_width 1))
+		(line (pt 96 32)(pt 96 16)(line_width 1))
+	)
+	(flipy)
+)
 (connector
 	(pt 456 160)
 	(pt 448 160)
@@ -524,23 +524,8 @@ applicable agreement for further details.
 	(pt 824 616)
 )
 (connector
-	(text "s[19]" (rect 808 753 820 777)(font "Arial" )(vertical))
-	(pt 824 784)
-	(pt 824 664)
-)
-(connector
 	(pt 872 200)
 	(pt 872 616)
-)
-(connector
-	(text "s[20]" (rect 856 753 868 777)(font "Arial" )(vertical))
-	(pt 872 784)
-	(pt 872 664)
-)
-(connector
-	(text "s[21]" (rect 904 753 916 777)(font "Arial" )(vertical))
-	(pt 920 784)
-	(pt 920 664)
 )
 (connector
 	(pt 688 784)
@@ -590,11 +575,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "s[24]" (rect 1136 756 1148 780)(font "Arial" )(vertical))
-	(pt 1152 784)
-	(pt 1152 664)
-)
-(connector
 	(pt 1152 320)
 	(pt 1152 616)
 )
@@ -637,11 +617,6 @@ applicable agreement for further details.
 	(pt 1064 616)
 )
 (connector
-	(text "s[7]" (rect 1048 758 1060 776)(font "Arial" )(vertical))
-	(pt 1064 784)
-	(pt 1064 664)
-)
-(connector
 	(pt 1064 232)
 	(pt 1752 232)
 )
@@ -649,11 +624,6 @@ applicable agreement for further details.
 	(pt 1064 784)
 	(pt 1104 784)
 	(bus)
-)
-(connector
-	(text "s[6]" (rect 960 758 972 776)(font "Arial" )(vertical))
-	(pt 976 784)
-	(pt 976 664)
 )
 (connector
 	(pt 920 784)
@@ -779,6 +749,36 @@ applicable agreement for further details.
 	(text "a[0]" (rect 386 760 404 772)(font "Arial" ))
 	(pt 376 776)
 	(pt 472 776)
+)
+(connector
+	(text "s[21]" (rect 808 753 820 777)(font "Arial" )(vertical))
+	(pt 824 784)
+	(pt 824 664)
+)
+(connector
+	(text "s[22]" (rect 856 753 868 777)(font "Arial" )(vertical))
+	(pt 872 784)
+	(pt 872 664)
+)
+(connector
+	(text "s[23]" (rect 904 753 916 777)(font "Arial" )(vertical))
+	(pt 920 784)
+	(pt 920 664)
+)
+(connector
+	(text "s[8]" (rect 960 758 972 776)(font "Arial" )(vertical))
+	(pt 976 784)
+	(pt 976 664)
+)
+(connector
+	(text "s[9]" (rect 1048 758 1060 776)(font "Arial" )(vertical))
+	(pt 1064 784)
+	(pt 1064 664)
+)
+(connector
+	(text "s[26]" (rect 1136 756 1148 780)(font "Arial" )(vertical))
+	(pt 1152 784)
+	(pt 1152 664)
 )
 (junction (pt 640 232))
 (junction (pt 640 200))
