@@ -487,11 +487,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "CB[0]" (rect 482 304 510 316)(font "Arial" ))
-	(pt 584 320)
-	(pt 208 320)
-)
-(connector
 	(pt 248 256)
 	(pt 208 256)
 )
@@ -581,6 +576,11 @@ applicable agreement for further details.
 	(pt 584 320)
 	(pt 584 560)
 	(bus)
+)
+(connector
+	(text "CB[15]" (rect 482 304 516 316)(font "Arial" ))
+	(pt 584 320)
+	(pt 208 320)
 )
 (junction (pt 552 -144))
 (junction (pt 584 320))
