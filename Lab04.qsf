@@ -187,4 +187,5 @@ set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name QIP_FILE lpm_decode_4.qip
 set_global_assignment -name BDF_FILE macro_mov_adr_reg.bdf
+set_global_assignment -name BDF_FILE macro_mov_reg_adr.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
