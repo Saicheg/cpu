@@ -785,16 +785,6 @@ applicable agreement for further details.
 	(pt 1560 280)
 )
 (connector
-	(text "s[52]" (rect 984 561 996 585)(font "Arial" )(vertical))
-	(pt 1000 520)
-	(pt 1000 592)
-)
-(connector
-	(text "s[53]" (rect 1016 561 1028 585)(font "Arial" )(vertical))
-	(pt 1032 520)
-	(pt 1032 592)
-)
-(connector
 	(pt 1064 312)
 	(pt 1064 472)
 )
@@ -822,6 +812,16 @@ applicable agreement for further details.
 	(text "s[25]" (rect 1048 561 1060 585)(font "Arial" )(vertical))
 	(pt 1064 592)
 	(pt 1064 520)
+)
+(connector
+	(text "s[53]" (rect 984 561 996 585)(font "Arial" )(vertical))
+	(pt 1000 520)
+	(pt 1000 592)
+)
+(connector
+	(text "s[54]" (rect 1016 561 1028 585)(font "Arial" )(vertical))
+	(pt 1032 520)
+	(pt 1032 592)
 )
 (junction (pt 440 184))
 (junction (pt 440 200))
@@ -860,5 +860,5 @@ applicable agreement for further details.
 (text "27, 8, 9" (rect 384 136 426 150)(font "Arial" (font_size 8)))
 (text "20, 50" (rect 392 176 427 190)(font "Arial" (font_size 8)))
 (text "20, 50, 18, 10, 11" (rect 336 240 435 254)(font "Arial" (font_size 8)))
-(text "10, 19, 52, 53" (rect 352 264 429 278)(font "Arial" (font_size 8)))
 (text "25" (rect 408 296 422 310)(font "Arial" (font_size 8)))
+(text "10, 19, 53, 54" (rect 352 264 429 278)(font "Arial" (font_size 8)))
