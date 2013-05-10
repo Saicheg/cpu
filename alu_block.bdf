@@ -1293,15 +1293,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 888 -16)
-	(pt 888 -8)
-)
-(connector
-	(text "alu_out_" (rect 872 -5 884 36)(font "Arial" )(vertical))
-	(pt 888 -8)
-	(pt 888 40)
-)
-(connector
 	(text "data_output[15..0]" (rect 754 -40 843 -28)(font "Arial" ))
 	(pt 744 -24)
 	(pt 848 -24)
@@ -1312,6 +1303,11 @@ applicable agreement for further details.
 	(pt 1520 440)
 	(pt 1520 136)
 	(bus)
+)
+(connector
+	(text "alu_out_" (rect 872 -5 884 36)(font "Arial" )(vertical))
+	(pt 888 -8)
+	(pt 888 40)
 )
 (junction (pt 400 200))
 (junction (pt 400 392))
@@ -1328,4 +1324,3 @@ applicable agreement for further details.
 (junction (pt 1536 640))
 (junction (pt 1312 472))
 (junction (pt 1520 440))
-(junction (pt 888 -8))
