@@ -54,7 +54,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 96 488 264 504)
+	(rect 96 360 264 376)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "SF" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
@@ -85,7 +85,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 568 104 760 200)
+	(rect 568 136 760 232)
 	(text "macro_jmp" (rect 5 0 66 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -153,18 +153,32 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 568 304 600 320)
-	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
-	(text "inst1" (rect 3 5 26 17)(font "Arial" )(invisible))
+	(rect 568 232 760 328)
+	(text "macro_js_next" (rect 5 0 88 14)(font "Arial" (font_size 8)))
+	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
 	(port
-		(pt 16 16)
+		(pt 0 32)
+		(input)
+		(text "ENABLE" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "ENABLE" (rect 21 27 68 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 192 32)
 		(output)
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(line (pt 16 16)(pt 16 8)(line_width 1))
+		(text "CONTROL[63..0]" (rect 0 0 93 14)(font "Arial" (font_size 8)))
+		(text "CONTROL[63..0]" (rect 78 27 171 41)(font "Arial" (font_size 8)))
+		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(drawing
-		(line (pt 8 8)(pt 24 8)(line_width 1))
+		(rectangle (rect 16 16 176 80)(line_width 1))
 	)
 )
 (connector
@@ -173,58 +187,82 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 808 232)
-	(pt 808 136)
-	(bus)
-)
-(connector
-	(pt 808 136)
-	(pt 760 136)
-	(bus)
-)
-(connector
-	(pt 256 152)
-	(pt 568 152)
-)
-(connector
-	(pt 256 136)
-	(pt 568 136)
-)
-(connector
-	(pt 584 344)
-	(pt 648 344)
-)
-(connector
-	(text "s[25]" (rect 632 313 644 337)(font "Arial" )(vertical))
-	(pt 648 344)
-	(pt 648 248)
-)
-(connector
 	(pt 1024 240)
 	(pt 1104 240)
 	(bus)
 )
 (connector
-	(pt 952 272)
-	(pt 952 496)
-)
-(connector
-	(pt 264 496)
-	(pt 952 496)
-)
-(connector
-	(pt 568 248)
-	(pt 648 248)
+	(pt 760 264)
+	(pt 808 264)
 	(bus)
 )
 (connector
-	(text "s[63..0]" (rect 722 232 759 244)(font "Arial" ))
-	(pt 648 248)
+	(pt 808 264)
+	(pt 808 248)
+	(bus)
+)
+(connector
+	(pt 808 248)
 	(pt 872 248)
 	(bus)
 )
 (connector
-	(pt 584 344)
-	(pt 584 320)
+	(pt 568 264)
+	(pt 504 264)
 )
-(junction (pt 648 248))
+(connector
+	(pt 256 136)
+	(pt 504 136)
+)
+(connector
+	(pt 568 280)
+	(pt 488 280)
+)
+(connector
+	(pt 256 152)
+	(pt 488 152)
+)
+(connector
+	(pt 808 232)
+	(pt 808 168)
+	(bus)
+)
+(connector
+	(pt 808 168)
+	(pt 760 168)
+	(bus)
+)
+(connector
+	(pt 504 168)
+	(pt 568 168)
+)
+(connector
+	(pt 488 184)
+	(pt 568 184)
+)
+(connector
+	(pt 504 136)
+	(pt 504 168)
+)
+(connector
+	(pt 504 168)
+	(pt 504 264)
+)
+(connector
+	(pt 488 152)
+	(pt 488 184)
+)
+(connector
+	(pt 488 184)
+	(pt 488 280)
+)
+(connector
+	(pt 952 272)
+	(pt 952 368)
+)
+(connector
+	(pt 952 368)
+	(pt 264 368)
+)
+(junction (pt 504 168))
+(junction (pt 488 184))
