@@ -325,6 +325,23 @@ applicable agreement for further details.
 	)
 	(flipx)
 )
+(pin
+	(output)
+	(rect 280 704 296 884)
+	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
+	(text "DEBUG_ALU_SF" (rect 5 89 17 175)(font "Arial" )(vertical))
+	(pt 8 0)
+	(drawing
+		(line (pt 8 0)(pt 8 52)(line_width 1))
+		(line (pt 12 52)(pt 12 78)(line_width 1))
+		(line (pt 4 52)(pt 4 78)(line_width 1))
+		(line (pt 4 52)(pt 12 52)(line_width 1))
+		(line (pt 12 78)(pt 8 82)(line_width 1))
+		(line (pt 8 82)(pt 4 78)(line_width 1))
+		(line (pt 4 78)(pt 8 82)(line_width 1))
+	)
+	(rotate270)
+)
 (symbol
 	(rect 248 192 464 288)
 	(text "memory_rom" (rect 5 0 78 14)(font "Arial" (font_size 8)))
@@ -1337,10 +1354,6 @@ applicable agreement for further details.
 )
 (connector
 	(pt 16 704)
-	(pt 480 704)
-)
-(connector
-	(pt 16 704)
 	(pt 16 -8)
 )
 (connector
@@ -1350,6 +1363,14 @@ applicable agreement for further details.
 (connector
 	(pt 296 -152)
 	(pt 288 -152)
+)
+(connector
+	(pt 16 704)
+	(pt 288 704)
+)
+(connector
+	(pt 288 704)
+	(pt 480 704)
 )
 (junction (pt 584 320))
 (junction (pt 520 168))
@@ -1383,4 +1404,5 @@ applicable agreement for further details.
 (junction (pt 584 344))
 (junction (pt 584 368))
 (junction (pt 584 392))
+(junction (pt 288 704))
 (text "r" (rect 672 -72 676 -58)(font "Arial" (font_size 8)))

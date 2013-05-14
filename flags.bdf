@@ -22,7 +22,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.3"))
 (pin
 	(input)
-	(rect 0 80 168 96)
+	(rect 0 152 168 168)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "SF_SET" (rect 5 0 45 12)(font "Arial" ))
 	(pt 168 8)
@@ -38,7 +38,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 0 96 168 112)
+	(rect 0 168 168 184)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "SF_CLEAR" (rect 5 0 61 12)(font "Arial" ))
 	(pt 168 8)
@@ -54,7 +54,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 0 168 168 184)
+	(rect 0 256 168 272)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "ZF_SET" (rect 5 0 45 12)(font "Arial" ))
 	(pt 168 8)
@@ -70,7 +70,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 0 184 168 200)
+	(rect 0 272 168 288)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "ZF_CLEAR" (rect 5 0 61 12)(font "Arial" ))
 	(pt 168 8)
@@ -86,7 +86,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 0 256 168 272)
+	(rect 0 344 168 360)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "JF_SET" (rect 5 0 43 12)(font "Arial" ))
 	(pt 168 8)
@@ -102,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 0 272 168 288)
+	(rect 0 360 168 376)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "JF_CLEAR" (rect 5 0 60 12)(font "Arial" ))
 	(pt 168 8)
@@ -118,7 +118,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 312 80 488 96)
+	(rect 320 152 496 168)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "SF" (rect 90 0 104 12)(font "Arial" ))
 	(pt 0 8)
@@ -134,7 +134,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 312 168 488 184)
+	(rect 312 256 488 272)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ZF" (rect 90 0 104 12)(font "Arial" ))
 	(pt 0 8)
@@ -150,7 +150,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 312 256 488 272)
+	(rect 312 344 488 360)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "JF" (rect 90 0 102 12)(font "Arial" ))
 	(pt 0 8)
@@ -165,36 +165,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 176 56 288 152)
-	(text "state_trigger" (rect 5 0 76 14)(font "Arial" (font_size 8)))
-	(text "inst60" (rect 8 80 37 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "set" (rect 0 0 17 14)(font "Arial" (font_size 8)))
-		(text "set" (rect 21 27 38 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 1))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "reset" (rect 21 43 50 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 112 32)
-		(output)
-		(text "state" (rect 0 0 28 14)(font "Arial" (font_size 8)))
-		(text "state" (rect 63 27 91 41)(font "Arial" (font_size 8)))
-		(line (pt 112 32)(pt 96 32)(line_width 1))
-	)
-	(drawing
-		(rectangle (rect 16 16 96 80)(line_width 1))
-	)
-)
-(symbol
-	(rect 176 144 288 240)
+	(rect 176 232 288 328)
 	(text "state_trigger" (rect 5 0 76 14)(font "Arial" (font_size 8)))
 	(text "inst61" (rect 8 80 37 92)(font "Arial" ))
 	(port
@@ -223,7 +194,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 176 232 288 328)
+	(rect 176 320 288 416)
 	(text "state_trigger" (rect 5 0 76 14)(font "Arial" (font_size 8)))
 	(text "inst62" (rect 8 80 37 92)(font "Arial" ))
 	(port
@@ -251,33 +222,42 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 96 80)(line_width 1))
 	)
 )
+(symbol
+	(rect 176 128 288 224)
+	(text "state_trigger" (rect 5 0 76 14)(font "Arial" (font_size 8)))
+	(text "inst63" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "set" (rect 0 0 17 14)(font "Arial" (font_size 8)))
+		(text "set" (rect 21 27 38 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 43 50 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 112 32)
+		(output)
+		(text "state" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "state" (rect 63 27 91 41)(font "Arial" (font_size 8)))
+		(line (pt 112 32)(pt 96 32)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 96 80)(line_width 1))
+	)
+)
 (connector
-	(pt 288 88)
-	(pt 312 88)
+	(pt 288 352)
+	(pt 312 352)
 )
 (connector
 	(pt 288 264)
 	(pt 312 264)
-)
-(connector
-	(pt 288 176)
-	(pt 312 176)
-)
-(connector
-	(pt 176 88)
-	(pt 168 88)
-)
-(connector
-	(pt 176 104)
-	(pt 168 104)
-)
-(connector
-	(pt 176 176)
-	(pt 168 176)
-)
-(connector
-	(pt 176 192)
-	(pt 168 192)
 )
 (connector
 	(pt 176 264)
@@ -286,4 +266,24 @@ applicable agreement for further details.
 (connector
 	(pt 176 280)
 	(pt 168 280)
+)
+(connector
+	(pt 176 352)
+	(pt 168 352)
+)
+(connector
+	(pt 176 368)
+	(pt 168 368)
+)
+(connector
+	(pt 168 176)
+	(pt 176 176)
+)
+(connector
+	(pt 168 160)
+	(pt 176 160)
+)
+(connector
+	(pt 288 160)
+	(pt 320 160)
 )
